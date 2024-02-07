@@ -14,6 +14,9 @@
                     {% for page in pages %}
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
+                    <div>
+                        <a href="{% url 'index' %}">Back to Home</a>
+                    </div>
                 </ul>
             {% else %}
                 <strong>No pages currently in category.</strong>
